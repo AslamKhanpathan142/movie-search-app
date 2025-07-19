@@ -1,0 +1,173 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #0b0729;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  flex-wrap: wrap;
+}
+
+.logoText {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+}
+.nextText {
+  color: #e50914;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 2rem;
+  color: #e50914;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.navListMobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #1f1f1f;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
+  z-index: 999;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+liMobile {
+  margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #e50914;
+  outline: none;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.searchInput {
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  width: 180px;
+  transition: width 0.3s ease;
+  background-color: #333;
+  color: #fff;
+}
+
+.searchInput::placeholder {
+  color: #bbb;
+}
+
+.searchButton {
+  background-color: #e50914;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchButton:hover,
+.searchButton:focus {
+  background-color: #b4080a;
+  outline: none;
+}
+
+.searchIcon {
+  font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .navListMobileVisible {
+    display: flex;
+  }
+
+  li {
+    margin-left: 0;
+  }
+
+  .liMobile {
+    margin: 1rem 0;
+  }
+
+  .searchForm {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .searchInput {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .searchButton {
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
+

@@ -1,0 +1,165 @@
+ .aboutContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #ffffff;
+  border-radius: 8px;
+ 
+}
+
+.heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.text1 {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  border-top: 1px solid #1e1853;
+  border-bottom: 1px solid #1e1853;
+}
+
+.list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.list li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.logoText {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+}
+.nextText {
+  color: #e50914;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 26px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .list li {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .aboutContainer {
+    padding: 20px 12px;
+  }
+}
+
+ .aboutWrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+  color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 1s ease-in;
+}
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroTitle {
+  font-size: 36px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px #000;
+  animation: slideDown 1s ease-in-out;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .heroTitle {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .aboutContent {
+    padding: 20px 15px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .list li {
+    font-size: 14px;
+  }
+}
