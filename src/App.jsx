@@ -41,7 +41,7 @@ function App() {
 
   // Example API URL
 // https://www.omdbapi.com/?s=${searchTerm}&apikey=YOUR_API_KEY_HERE
- const url = `https://www.omdbapi.com/?s=${searchTerm}&apikey=ce417c0b`;
+ const url = `https://www.omdbapi.com/?s=${searchTerm}&apikey=YOUR_API_KEY_HERE`;
 
 
   const getMovie = async () => {
